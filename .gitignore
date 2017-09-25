@@ -30,3 +30,7 @@
 *.exe
 *.out
 *.app
+
+soln/Release/*
+soln/Debug/*
+soln/.vs/*
