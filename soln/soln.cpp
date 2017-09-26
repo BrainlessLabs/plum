@@ -1,7 +1,12 @@
-// soln.cpp : Defines the entry point for the console application.
-//
+#include "crow/crow.h"
 
 int main()
 {
-    return 0;
+	crow::SimpleApp app;
+
+	CROW_ROUTE(app, "/")([]() {
+		return "Hello world";
+	});
+
+	app.port(18080).multithreaded().run();
 }

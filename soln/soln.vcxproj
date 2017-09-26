@@ -125,14 +125,14 @@
       <Optimization>Disabled</Optimization>
       <FunctionLevelLinking>false</FunctionLevelLinking>
       <IntrinsicFunctions>false</IntrinsicFunctions>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;YY_NO_UNISTD_H;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;YY_NO_UNISTD_H;_CRT_SECURE_NO_WARNINGS;BOOST_ALL_NO_LIB;BOOST_ERROR_CODE_HEADER_ONLY;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <DiagnosticsFormat>Column</DiagnosticsFormat>
       <SDLCheck>true</SDLCheck>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <WholeProgramOptimization>false</WholeProgramOptimization>
       <BrowseInformation>true</BrowseInformation>
       <EnablePREfast>true</EnablePREfast>
-      <AdditionalIncludeDirectories>%(BOOST_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(BOOST_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -165,7 +165,6 @@
     <ClCompile Include="parser\bison_parser.cpp" />
     <ClCompile Include="parser\flex_lexer.cpp" />
     <ClCompile Include="soln.cpp" />
-    <ClCompile Include="sqlite3.c" />
     <ClCompile Include="SQLParser.cpp" />
     <ClCompile Include="SQLParserResult.cpp" />
     <ClCompile Include="sql\Expr.cpp" />
@@ -207,8 +206,6 @@
     <ClInclude Include="spdlog\logger.h" />
     <ClInclude Include="spdlog\spdlog.h" />
     <ClInclude Include="spdlog\tweakme.h" />
-    <ClInclude Include="sqlite3.h" />
-    <ClInclude Include="sqlite3ext.h" />
     <ClInclude Include="SQLParser.h" />
     <ClInclude Include="SQLParserResult.h" />
     <ClInclude Include="sql\CreateStatement.h" />
