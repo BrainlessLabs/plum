@@ -22,6 +22,9 @@
     <Filter Include="crow\crow">
       <UniqueIdentifier>{292aa3bf-331f-4214-8740-145e96b045a2}</UniqueIdentifier>
     </Filter>
+    <Filter Include="spdlog">
+      <UniqueIdentifier>{9579d212-f385-4bb0-a006-eb340b08f050}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -196,6 +199,24 @@
     </ClInclude>
     <ClInclude Include="crow\crow\websocket.h">
       <Filter>crow\crow</Filter>
+    </ClInclude>
+    <ClInclude Include="spdlog\async_logger.h">
+      <Filter>spdlog</Filter>
+    </ClInclude>
+    <ClInclude Include="spdlog\common.h">
+      <Filter>spdlog</Filter>
+    </ClInclude>
+    <ClInclude Include="spdlog\formatter.h">
+      <Filter>spdlog</Filter>
+    </ClInclude>
+    <ClInclude Include="spdlog\logger.h">
+      <Filter>spdlog</Filter>
+    </ClInclude>
+    <ClInclude Include="spdlog\spdlog.h">
+      <Filter>spdlog</Filter>
+    </ClInclude>
+    <ClInclude Include="spdlog\tweakme.h">
+      <Filter>spdlog</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

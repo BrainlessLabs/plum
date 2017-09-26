@@ -201,6 +201,12 @@
     <ClInclude Include="parser\bison_parser.h" />
     <ClInclude Include="parser\flex_lexer.h" />
     <ClInclude Include="parser\parser_typedef.h" />
+    <ClInclude Include="spdlog\async_logger.h" />
+    <ClInclude Include="spdlog\common.h" />
+    <ClInclude Include="spdlog\formatter.h" />
+    <ClInclude Include="spdlog\logger.h" />
+    <ClInclude Include="spdlog\spdlog.h" />
+    <ClInclude Include="spdlog\tweakme.h" />
     <ClInclude Include="sqlite3.h" />
     <ClInclude Include="sqlite3ext.h" />
     <ClInclude Include="SQLParser.h" />
