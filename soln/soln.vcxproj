@@ -125,13 +125,14 @@
       <Optimization>Disabled</Optimization>
       <FunctionLevelLinking>false</FunctionLevelLinking>
       <IntrinsicFunctions>false</IntrinsicFunctions>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;YY_NO_UNISTD_H;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <DiagnosticsFormat>Column</DiagnosticsFormat>
       <SDLCheck>true</SDLCheck>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <WholeProgramOptimization>false</WholeProgramOptimization>
       <BrowseInformation>true</BrowseInformation>
       <EnablePREfast>true</EnablePREfast>
+      <AdditionalIncludeDirectories>%(BOOST_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -161,7 +162,64 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="parser\bison_parser.cpp" />
+    <ClCompile Include="parser\flex_lexer.cpp" />
     <ClCompile Include="soln.cpp" />
+    <ClCompile Include="sqlite3.c" />
+    <ClCompile Include="SQLParser.cpp" />
+    <ClCompile Include="SQLParserResult.cpp" />
+    <ClCompile Include="sql\Expr.cpp" />
+    <ClCompile Include="sql\PrepareStatement.cpp" />
+    <ClCompile Include="sql\SQLStatement.cpp" />
+    <ClCompile Include="sql\statements.cpp" />
+    <ClCompile Include="util\sqlhelper.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="crow\crow.h" />
+    <ClInclude Include="crow\crow\app.h" />
+    <ClInclude Include="crow\crow\ci_map.h" />
+    <ClInclude Include="crow\crow\common.h" />
+    <ClInclude Include="crow\crow\dumb_timer_queue.h" />
+    <ClInclude Include="crow\crow\http_connection.h" />
+    <ClInclude Include="crow\crow\http_parser_merged.h" />
+    <ClInclude Include="crow\crow\http_request.h" />
+    <ClInclude Include="crow\crow\http_response.h" />
+    <ClInclude Include="crow\crow\http_server.h" />
+    <ClInclude Include="crow\crow\json.h" />
+    <ClInclude Include="crow\crow\logging.h" />
+    <ClInclude Include="crow\crow\middleware.h" />
+    <ClInclude Include="crow\crow\middleware_context.h" />
+    <ClInclude Include="crow\crow\mustache.h" />
+    <ClInclude Include="crow\crow\parser.h" />
+    <ClInclude Include="crow\crow\query_string.h" />
+    <ClInclude Include="crow\crow\routing.h" />
+    <ClInclude Include="crow\crow\settings.h" />
+    <ClInclude Include="crow\crow\socket_adaptors.h" />
+    <ClInclude Include="crow\crow\TinySHA1.hpp" />
+    <ClInclude Include="crow\crow\utility.h" />
+    <ClInclude Include="crow\crow\websocket.h" />
+    <ClInclude Include="parser\bison_parser.h" />
+    <ClInclude Include="parser\flex_lexer.h" />
+    <ClInclude Include="parser\parser_typedef.h" />
+    <ClInclude Include="sqlite3.h" />
+    <ClInclude Include="sqlite3ext.h" />
+    <ClInclude Include="SQLParser.h" />
+    <ClInclude Include="SQLParserResult.h" />
+    <ClInclude Include="sql\CreateStatement.h" />
+    <ClInclude Include="sql\DeleteStatement.h" />
+    <ClInclude Include="sql\DropStatement.h" />
+    <ClInclude Include="sql\ExecuteStatement.h" />
+    <ClInclude Include="sql\Expr.h" />
+    <ClInclude Include="sql\ImportStatement.h" />
+    <ClInclude Include="sql\InsertStatement.h" />
+    <ClInclude Include="sql\PrepareStatement.h" />
+    <ClInclude Include="sql\SelectStatement.h" />
+    <ClInclude Include="sql\ShowStatement.h" />
+    <ClInclude Include="sql\SQLStatement.h" />
+    <ClInclude Include="sql\statements.h" />
+    <ClInclude Include="sql\Table.h" />
+    <ClInclude Include="sql\UpdateStatement.h" />
+    <ClInclude Include="util\sqlhelper.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -13,6 +13,15 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="hyrise">
+      <UniqueIdentifier>{ad0d23ac-bdc9-4c6b-b01d-eaf8238e0b99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="crow">
+      <UniqueIdentifier>{fa5f33c0-adeb-45dd-9b00-3315e1533b97}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="crow\crow">
+      <UniqueIdentifier>{292aa3bf-331f-4214-8740-145e96b045a2}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -21,5 +30,172 @@
     <ClCompile Include="soln.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="sqlite3.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SQLParser.cpp">
+      <Filter>hyrise</Filter>
+    </ClCompile>
+    <ClCompile Include="SQLParserResult.cpp">
+      <Filter>hyrise</Filter>
+    </ClCompile>
+    <ClCompile Include="parser\bison_parser.cpp">
+      <Filter>hyrise</Filter>
+    </ClCompile>
+    <ClCompile Include="parser\flex_lexer.cpp">
+      <Filter>hyrise</Filter>
+    </ClCompile>
+    <ClCompile Include="util\sqlhelper.cpp">
+      <Filter>hyrise</Filter>
+    </ClCompile>
+    <ClCompile Include="sql\Expr.cpp">
+      <Filter>hyrise</Filter>
+    </ClCompile>
+    <ClCompile Include="sql\PrepareStatement.cpp">
+      <Filter>hyrise</Filter>
+    </ClCompile>
+    <ClCompile Include="sql\SQLStatement.cpp">
+      <Filter>hyrise</Filter>
+    </ClCompile>
+    <ClCompile Include="sql\statements.cpp">
+      <Filter>hyrise</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="sqlite3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sqlite3ext.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SQLParser.h">
+      <Filter>hyrise</Filter>
+    </ClInclude>
+    <ClInclude Include="SQLParserResult.h">
+      <Filter>hyrise</Filter>
+    </ClInclude>
+    <ClInclude Include="parser\bison_parser.h">
+      <Filter>hyrise</Filter>
+    </ClInclude>
+    <ClInclude Include="parser\flex_lexer.h">
+      <Filter>hyrise</Filter>
+    </ClInclude>
+    <ClInclude Include="parser\parser_typedef.h">
+      <Filter>hyrise</Filter>
+    </ClInclude>
+    <ClInclude Include="util\sqlhelper.h">
+      <Filter>hyrise</Filter>
+    </ClInclude>
+    <ClInclude Include="sql\CreateStatement.h">
+      <Filter>hyrise</Filter>
+    </ClInclude>
+    <ClInclude Include="sql\DeleteStatement.h">
+      <Filter>hyrise</Filter>
+    </ClInclude>
+    <ClInclude Include="sql\DropStatement.h">
+      <Filter>hyrise</Filter>
+    </ClInclude>
+    <ClInclude Include="sql\ExecuteStatement.h">
+      <Filter>hyrise</Filter>
+    </ClInclude>
+    <ClInclude Include="sql\Expr.h">
+      <Filter>hyrise</Filter>
+    </ClInclude>
+    <ClInclude Include="sql\ImportStatement.h">
+      <Filter>hyrise</Filter>
+    </ClInclude>
+    <ClInclude Include="sql\InsertStatement.h">
+      <Filter>hyrise</Filter>
+    </ClInclude>
+    <ClInclude Include="sql\PrepareStatement.h">
+      <Filter>hyrise</Filter>
+    </ClInclude>
+    <ClInclude Include="sql\SelectStatement.h">
+      <Filter>hyrise</Filter>
+    </ClInclude>
+    <ClInclude Include="sql\ShowStatement.h">
+      <Filter>hyrise</Filter>
+    </ClInclude>
+    <ClInclude Include="sql\SQLStatement.h">
+      <Filter>hyrise</Filter>
+    </ClInclude>
+    <ClInclude Include="sql\statements.h">
+      <Filter>hyrise</Filter>
+    </ClInclude>
+    <ClInclude Include="sql\Table.h">
+      <Filter>hyrise</Filter>
+    </ClInclude>
+    <ClInclude Include="sql\UpdateStatement.h">
+      <Filter>hyrise</Filter>
+    </ClInclude>
+    <ClInclude Include="crow\crow.h">
+      <Filter>crow</Filter>
+    </ClInclude>
+    <ClInclude Include="crow\crow\app.h">
+      <Filter>crow\crow</Filter>
+    </ClInclude>
+    <ClInclude Include="crow\crow\ci_map.h">
+      <Filter>crow\crow</Filter>
+    </ClInclude>
+    <ClInclude Include="crow\crow\common.h">
+      <Filter>crow\crow</Filter>
+    </ClInclude>
+    <ClInclude Include="crow\crow\dumb_timer_queue.h">
+      <Filter>crow\crow</Filter>
+    </ClInclude>
+    <ClInclude Include="crow\crow\http_connection.h">
+      <Filter>crow\crow</Filter>
+    </ClInclude>
+    <ClInclude Include="crow\crow\http_parser_merged.h">
+      <Filter>crow\crow</Filter>
+    </ClInclude>
+    <ClInclude Include="crow\crow\http_request.h">
+      <Filter>crow\crow</Filter>
+    </ClInclude>
+    <ClInclude Include="crow\crow\http_response.h">
+      <Filter>crow\crow</Filter>
+    </ClInclude>
+    <ClInclude Include="crow\crow\http_server.h">
+      <Filter>crow\crow</Filter>
+    </ClInclude>
+    <ClInclude Include="crow\crow\json.h">
+      <Filter>crow\crow</Filter>
+    </ClInclude>
+    <ClInclude Include="crow\crow\logging.h">
+      <Filter>crow\crow</Filter>
+    </ClInclude>
+    <ClInclude Include="crow\crow\middleware.h">
+      <Filter>crow\crow</Filter>
+    </ClInclude>
+    <ClInclude Include="crow\crow\middleware_context.h">
+      <Filter>crow\crow</Filter>
+    </ClInclude>
+    <ClInclude Include="crow\crow\mustache.h">
+      <Filter>crow\crow</Filter>
+    </ClInclude>
+    <ClInclude Include="crow\crow\parser.h">
+      <Filter>crow\crow</Filter>
+    </ClInclude>
+    <ClInclude Include="crow\crow\query_string.h">
+      <Filter>crow\crow</Filter>
+    </ClInclude>
+    <ClInclude Include="crow\crow\routing.h">
+      <Filter>crow\crow</Filter>
+    </ClInclude>
+    <ClInclude Include="crow\crow\settings.h">
+      <Filter>crow\crow</Filter>
+    </ClInclude>
+    <ClInclude Include="crow\crow\socket_adaptors.h">
+      <Filter>crow\crow</Filter>
+    </ClInclude>
+    <ClInclude Include="crow\crow\TinySHA1.hpp">
+      <Filter>crow\crow</Filter>
+    </ClInclude>
+    <ClInclude Include="crow\crow\utility.h">
+      <Filter>crow\crow</Filter>
+    </ClInclude>
+    <ClInclude Include="crow\crow\websocket.h">
+      <Filter>crow\crow</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
