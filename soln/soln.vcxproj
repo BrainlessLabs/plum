@@ -132,7 +132,7 @@
       <WholeProgramOptimization>false</WholeProgramOptimization>
       <BrowseInformation>true</BrowseInformation>
       <EnablePREfast>true</EnablePREfast>
-      <AdditionalIncludeDirectories>$(BOOST_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(BOOST_DIR);$(SolutionDir);$(SolutionDir)/msgpack;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -200,6 +200,7 @@
     <ClInclude Include="parser\bison_parser.h" />
     <ClInclude Include="parser\flex_lexer.h" />
     <ClInclude Include="parser\parser_typedef.h" />
+    <ClInclude Include="plum.hpp" />
     <ClInclude Include="simplewebsocket\client_ws.hpp" />
     <ClInclude Include="simplewebsocket\client_wss.hpp" />
     <ClInclude Include="simplewebsocket\crypto.hpp" />

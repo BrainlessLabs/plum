@@ -28,6 +28,9 @@
     <Filter Include="simplewebsocket">
       <UniqueIdentifier>{960c9a42-84b9-4438-9cdd-efbadf21d801}</UniqueIdentifier>
     </Filter>
+    <Filter Include="plum">
+      <UniqueIdentifier>{c4a50ab3-aedf-4fea-a2b5-77d3fa0a3dc6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -232,6 +235,9 @@
     </ClInclude>
     <ClInclude Include="simplewebsocket\utility.hpp">
       <Filter>simplewebsocket</Filter>
+    </ClInclude>
+    <ClInclude Include="plum.hpp">
+      <Filter>plum</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
