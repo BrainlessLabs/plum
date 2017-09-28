@@ -25,6 +25,9 @@
     <Filter Include="spdlog">
       <UniqueIdentifier>{9579d212-f385-4bb0-a006-eb340b08f050}</UniqueIdentifier>
     </Filter>
+    <Filter Include="simplewebsocket">
+      <UniqueIdentifier>{960c9a42-84b9-4438-9cdd-efbadf21d801}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -209,5 +212,29 @@
     <ClInclude Include="spdlog\tweakme.h">
       <Filter>spdlog</Filter>
     </ClInclude>
+    <ClInclude Include="simplewebsocket\client_ws.hpp">
+      <Filter>simplewebsocket</Filter>
+    </ClInclude>
+    <ClInclude Include="simplewebsocket\client_wss.hpp">
+      <Filter>simplewebsocket</Filter>
+    </ClInclude>
+    <ClInclude Include="simplewebsocket\crypto.hpp">
+      <Filter>simplewebsocket</Filter>
+    </ClInclude>
+    <ClInclude Include="simplewebsocket\server_ws.hpp">
+      <Filter>simplewebsocket</Filter>
+    </ClInclude>
+    <ClInclude Include="simplewebsocket\server_wss.hpp">
+      <Filter>simplewebsocket</Filter>
+    </ClInclude>
+    <ClInclude Include="simplewebsocket\status_code.hpp">
+      <Filter>simplewebsocket</Filter>
+    </ClInclude>
+    <ClInclude Include="simplewebsocket\utility.hpp">
+      <Filter>simplewebsocket</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\README.md" />
   </ItemGroup>
 </Project>

@@ -1,2 +1,2 @@
 # plum
-A C++In-Memory database
+A C++ In-Memory database

@@ -1,4 +1,5 @@
 #include "crow/crow.h"
+#include <cstdlib>
 
 int main()
 {
@@ -8,5 +9,11 @@ int main()
 		return "Hello world";
 	});
 
-	app.port(18080).multithreaded().run();
+	auto port_str = std::getenv("PORT");
+	int port = 80;
+	if (port_str != nullptr) {
+		port = std::atoi(port_str);
+	}
+
+	app.port(port).multithreaded().run();
 }

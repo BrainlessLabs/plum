@@ -200,6 +200,13 @@
     <ClInclude Include="parser\bison_parser.h" />
     <ClInclude Include="parser\flex_lexer.h" />
     <ClInclude Include="parser\parser_typedef.h" />
+    <ClInclude Include="simplewebsocket\client_ws.hpp" />
+    <ClInclude Include="simplewebsocket\client_wss.hpp" />
+    <ClInclude Include="simplewebsocket\crypto.hpp" />
+    <ClInclude Include="simplewebsocket\server_ws.hpp" />
+    <ClInclude Include="simplewebsocket\server_wss.hpp" />
+    <ClInclude Include="simplewebsocket\status_code.hpp" />
+    <ClInclude Include="simplewebsocket\utility.hpp" />
     <ClInclude Include="spdlog\async_logger.h" />
     <ClInclude Include="spdlog\common.h" />
     <ClInclude Include="spdlog\formatter.h" />
@@ -223,6 +230,9 @@
     <ClInclude Include="sql\Table.h" />
     <ClInclude Include="sql\UpdateStatement.h" />
     <ClInclude Include="util\sqlhelper.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\README.md" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
