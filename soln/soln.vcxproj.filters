@@ -31,6 +31,9 @@
     <Filter Include="plum">
       <UniqueIdentifier>{c4a50ab3-aedf-4fea-a2b5-77d3fa0a3dc6}</UniqueIdentifier>
     </Filter>
+    <Filter Include="templates">
+      <UniqueIdentifier>{61004612-df92-4160-9a8a-e48573206738}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -242,5 +245,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="..\README.md" />
+    <None Include="templates\ws.html">
+      <Filter>templates</Filter>
+    </None>
   </ItemGroup>
 </Project>
